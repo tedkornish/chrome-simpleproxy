@@ -13,4 +13,7 @@ autorestart=true \n\
 priority=400 \n\
 ' >> /etc/supervisor/conf.d/supervisord.conf
 
+EXPOSE 5900
+EXPOSE 9223
+
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
